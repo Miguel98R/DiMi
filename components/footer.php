@@ -23,22 +23,8 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
+<script type="text/javascript" src="js/wow.js"></script>
 
-  <script>
-
- $( document ).ready(function() {
-  new WOW().init();
-});
-  </script>
-
-  <script>
-    //Cierra la modal en 2 segundos
-window.setTimeout(function() {
-    $(".alert").fadeTo(500, 0).slideUp(500, function(){
-        $(this).remove(); 
-    });
-}, 2000);
-  </script>
   <script type="text/javascript"></script>
 
   

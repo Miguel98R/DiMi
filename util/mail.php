@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 $servicio = $_POST['servicio'];
 $nombre = $_POST['nombre'];
@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $cel = $_POST['cel'];
 
 
-if($email=="" || $email==null || $email==undefined){
+if($email==""){
 $email = "no se registro email de contacto";
 }
 
@@ -25,26 +25,17 @@ $carta .="Motivo de solicitud:\n $mensaje \n\n";
 
 
 
-$headers .= 'From: <dimicontacto@example.com>' . "\r\n";
+$headers = 'From: <dimicontacto@example.com>' . "\r\n";
 $headers .= 'Cc: dimicontacto@example.com' . "\r\n";
 
  
 
-if(mail($destinatario,$asunto,$carta,$headers)){
-    $_SESSION["mensaje"] = "Peticion enviada correctamente en breve nos comunicaremos";
+mail($destinatario,$asunto,$carta,$headers);
+  
+
+header("location: ../confirmacionEmail.php");
 
 
-$_SESSION["colorMensaje"] = "success";
-
-header("location: ../index.php");
-
-}else{
-    $_SESSION["mensaje"] = "Error al solicitar servicio, intentalo de nuevo por favor";
-
-
-$_SESSION["colorMensaje"] = "danger";
-    header('Location:../index.php');
-}
 
 
 ?>

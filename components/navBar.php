@@ -42,7 +42,7 @@
         <a class="nav-link" href="#servicios">Nuestros servicios</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#contacto">Contactanos</a>
+        <a class="nav-link" href="#contacto">Contáctanos</a>
       </li>
      
     </ul>
