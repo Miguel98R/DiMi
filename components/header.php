@@ -1,15 +1,16 @@
-<!-- Jumbotron -->
-<div class="card card-image" style="background-image: url(./img/logo.jpeg);">
-  <div class="text-white text-center rgba-stylish-strong py-5 px-4">
-    <div class="py-5">
-
-      <!-- Content -->
-      <h5 class="h5 orange-text"><i class="fas fa-camera-retro"></i> Photography</h5>
-      <h2 class="card-title h2 my-4 py-2">Jumbotron with image overlay</h2>
-      <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati vero aliquid libero doloribus ad, unde tempora maiores, ullam, modi qui quidem minima debitis perferendis vitae cumque et quo impedit.</p>
-      <a class="btn peach-gradient"><i class="fas fa-clone left"></i> View project</a>
-
-    </div>
+<header class="py-4 cabeza">
+  <div class="container-fluid py-4 wow fadeInUp">
+      <div class="row row-30 align-items-xl-center justify-content-xl-between">
+          <div class="col-md-6 text-center d-none d-sm-none d-md-block">
+            <img src="./img/logo.jpeg" alt="imagen" class="logo img-fluid z-depth-1 rounded-circle " >
+          </div>
+          <div class="col-md-6 py-4 text-center ">
+              <h2 class=" h1 py-4 text-dark "><strong>Desarrollamos e implementamos soluciones a tu medida</strong></h2>
+          <a role="button" href="#servicios" class="btn btn-dark">Empezar</a>
+          
+          </div>
+      </div>
   </div>
-</div>
-<!-- Jumbotron -->
+   
+
+</header>
